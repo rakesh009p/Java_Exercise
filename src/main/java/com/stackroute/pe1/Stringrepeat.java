@@ -2,7 +2,9 @@ package com.stackroute.pe1;
 import java.util.*;
 public class Stringrepeat{
     public static void main(String[] args){
-        int len;
+        Integer number=new Integer(19);
+        int len ;
+        Scanner scanner=null;
         Scanner sc= new Scanner(System.in);
         String g= sc.next();
         Scanner sca= new Scanner(System.in);

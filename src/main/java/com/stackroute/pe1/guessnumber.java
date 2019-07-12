@@ -23,4 +23,10 @@ public class guessnumber {
         }
 
     }
+    public String compareInt(int g){
+        if(g==34)
+            return "guessed properly";
+        else
+            return ("none");
+    }
 }

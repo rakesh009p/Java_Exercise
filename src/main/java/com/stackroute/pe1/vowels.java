@@ -14,4 +14,16 @@ public class vowels{
                 System.out.println(word.charAt(i)+" is consonant");}
         }
 
-    }}
+    }
+    public static String vowelcons(String word) {
+
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'o' || word.charAt(i) == 'u') {
+                System.out.println(word.charAt(i) + " is vowel");
+            } else {
+                System.out.println(word.charAt(i) + " is consonant");
+            }
+        }
+        return word;
+    }
+}
