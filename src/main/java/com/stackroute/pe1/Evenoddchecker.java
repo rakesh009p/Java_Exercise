@@ -1,11 +1,15 @@
 package com.stackroute.pe1;
 import java.util.*;
-public class evenodd{
+//program checks given integer is even or odd and returns tom or jerry
+public class Evenoddchecker{
+    //declaring main method
     public static void main(String[] args){
+        //input integer
         System.out.println("enter the number");
         Scanner scn=new Scanner(System.in);
 
         int x=scn.nextInt();
+        //input should be between 20 and 30
         if(x>20&&x<30){
             if(x%2==0){
                 System.out.println("tom");}
@@ -16,18 +20,18 @@ public class evenodd{
             System.out.println("not in range");}
     }
 
+//code for test cases
 
+        public int compareeven(int input){
 
-        public int compareeven(int g){
-
-            if(g>20&&g<30){
-                if(g%2==0){
+            if(input>20&&input<30){
+                if(input%2==0){
                     System.out.println("jerry");
                 }
                 else{
                     System.out.println("tom");
                 }
             }
-            return g;
+            return input;
         }
     }
