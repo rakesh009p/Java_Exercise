@@ -15,4 +15,15 @@ public class Arraysum {
         }
         System.out.println("Sum:" + sum);
     }
+    public int Arrayadder(int n){
+        int a[] = new int[n];
+        int sum=0;
+        for (int i = 0; i < n; i++) {
+
+            sum = sum + a[i];
+        }
+        System.out.println("Sum:" + sum);
+    }
+
+    }
 }

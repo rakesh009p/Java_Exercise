@@ -18,7 +18,7 @@ public class Palindromechecker{
             //code for even number
             if(rem%2==0){
                 x=x+rem;
-                //code for even nuber ends
+                //code for even number ends
             }
             //sum is the variable which tells status
             sum=(sum*10)+rem;
