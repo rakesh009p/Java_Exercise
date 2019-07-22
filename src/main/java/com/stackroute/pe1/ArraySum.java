@@ -1,7 +1,7 @@
 package com.stackroute.pe1;
 
 import java.util.Scanner;
-public class Arraysum {
+public class ArraySum {
     public static void main(String[] args) {
         int n, sum = 0;
         Scanner s = new Scanner(System.in);
@@ -15,15 +15,15 @@ public class Arraysum {
         }
         System.out.println("Sum:" + sum);
     }
-    public int Arrayadder(int n){
-        int a[] = new int[n];
+    public int arrayAdder(int n,int a[]){
         int sum=0;
         for (int i = 0; i < n; i++) {
 
             sum = sum + a[i];
         }
         System.out.println("Sum:" + sum);
+        return sum;
     }
 
     }
-}
+

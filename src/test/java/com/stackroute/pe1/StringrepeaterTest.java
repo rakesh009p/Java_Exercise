@@ -6,20 +6,20 @@ import static org.junit.Assert.*;
 
 public class StringrepeaterTest {
 
-    Stringreverser stringreverser ;
+    Stringrepeater stringrepeater ;
     @Before
     public void setUp() {
 
         System.out.println("Inside Before");//arrange
         CapitalChecker capitalChecker=new CapitalChecker();
 
-        this.stringreverser = new Stringreverser();
+        this.stringrepeater = new Stringrepeater();
     }
 
     @After
     public void tearDown() {
         System.out.println("Inside After");
-        this.stringreverser = new Stringreverser();
+        this.stringrepeater = new Stringrepeater();
     }
 
     @BeforeClass
@@ -37,5 +37,16 @@ public class StringrepeaterTest {
 
 
     @Test
-    public void main(){}
+    public void inputStringConcateItself() {
+        assertEquals("Stackrouteouteouteouteoute",stringrepeater.concateString(4,"Stackroute"));
+    }
+    @Test
+    public void inputStringConcateItselfAndReturn() {
+        assertEquals("rakeshesheshesh", stringrepeater.concateString(3,"rakesh"));
+    }
+
+    @Test
+    public void inputStringWillReturnNotEqual() {
+        assertNotEquals("rak", stringrepeater.concateString(3,"rak"));
+    }
 }
